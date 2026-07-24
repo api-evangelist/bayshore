@@ -1,7 +1,31 @@
 aid: bayshore
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bayshore.png
 name: Bayshore
-description: Bayshore is a company surfaced as a portfolio company of earlybird and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bayshore (bayshore AI GmbH) is a Munich-based legal and compliance technology
+  company building an agentic AI platform that turns any ruleset — from sector
+  regulations to internal corporate policies — into deterministic, machine-readable
+  guardrails for AI agents. Positioned as a "Legal & Compliance Front Door," the
+  platform handles incoming requests from business teams, auto-clears low-risk
+  cases with instant responses, escalates complex matters to human reviewers, and
+  maintains audit-ready documentation for every decision. Founded in 2024 by Paul
+  F. Welter, Philipp Wiegand, and Erik Krauter, the company focuses on highly
+  regulated industries including finance (MaRisk, DORA, NIS2), pharma, defense
+  (export controls, sanctions), and cross-industry programs (GDPR, anti-bribery,
+  antitrust, third-party due diligence). Bayshore raised an $8M seed round led by
+  Earlybird Venture Capital in 2026. This profile currently exposes no public API,
+  developer portal, or specifications.
 url: https://raw.githubusercontent.com/api-evangelist/bayshore/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Legal Tech
+- Compliance
+- RegTech
+- Artificial Intelligence
+- AI Agents
+- Governance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/bayshore-domain-security.yml
+- type: Website
+  url: https://www.bayshore.ai/
+- type: PrivacyPolicy
+  url: https://www.bayshore.ai/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bayshore-ai/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
